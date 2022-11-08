@@ -16,7 +16,7 @@ body{
 }
 .inner {
   margin: 0.3em;
-  max-width: 3em;
+  max-width: 2em;
   -webkit-box-flex: 0 0 5%;
       -ms-flex: 0 0 5%;
           flex: 0 0 5%;
