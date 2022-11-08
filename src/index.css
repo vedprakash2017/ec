@@ -5,6 +5,9 @@
 * Browsers: last 4 version
 */
 
+body{
+  -webkit-text-size-adjust: 100%
+}
 .outer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,7 +16,8 @@
 }
 .inner {
   margin: 0.3em;
-  -webkit-box-flex: 0;
+  max-width: 3em;
+  -webkit-box-flex: 0 0 5%;
       -ms-flex: 0 0 5%;
           flex: 0 0 5%;
   height: 3em;
