@@ -5,6 +5,15 @@
 * Browsers: last 4 version
 */
 
+#today_{
+  display: flex;
+}
+p{
+  flex:4;
+  flex-direction: column;
+  text-align: center;
+  color: aqua;
+}
 body{
   -webkit-text-size-adjust: 100%;
   background-color: #24252F;

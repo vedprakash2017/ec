@@ -13,6 +13,7 @@ const headers = {
  const Main = () => {
 
   const [coin, setPost] = React.useState(null);  
+  const [curr, setCurr] = React.useState(null);  
   const [prev_time, setPrev] = React.useState(0);
     
     React.useEffect(() => {
@@ -33,6 +34,9 @@ const headers = {
       let seconds = Math.floor(date.getTime() / 1000);
       setPost(response.data.coins);   
       setPrev(seconds+28);
+      let temp = response.data
+      delete temp.coin
+      setCurr(temp)
       // console.log('hello' , prev_time)  
       });
     }
@@ -46,6 +50,12 @@ const headers = {
   return (
     <div>
         <Header/>
+        <div id = "today_">
+          <p>{curr.index}</p>
+          <p>{curr.ct}</p>
+          <p>{curr.bonus}</p>
+          <p>{curr.t}</p>
+        </div>
         <Show coin = {coin} />
     </div>
   )
