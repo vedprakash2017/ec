@@ -6,7 +6,8 @@
 */
 
 body{
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+  background-color: #24252F;
 }
 .outer {
   display: -webkit-box;
@@ -31,4 +32,21 @@ body{
 #imgs{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#button_css{
+  display: flex;
+}
+
+#button_{
+  flex:4
+}
+
+#button1{
+  text-align: left;
+  /* margin: 0 0 10 0; */
+}
+
+#button2 {
+  text-align: right;
 }
