@@ -20,7 +20,7 @@ body{
   -webkit-box-flex: 0 0 5%;
       -ms-flex: 0 0 5%;
           flex: 0 0 5%;
-  height: 3em;
+  height: 2em;
   display:-webkit-inline-box;
   display:-ms-inline-flexbox;
   display:inline-flex;
