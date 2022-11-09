@@ -51,7 +51,6 @@ const headers = {
   return (
     <div>
         <Header/>
-        <Show coin = {coin} />
         <div id = "today_">
           <p id='show_p'>{curr.index}</p>
           <p id='show_p' >{curr.dist_}</p>
@@ -61,6 +60,7 @@ const headers = {
           <p id='show_p' >{curr.t}</p>
         </div>
         <Bottom coin = {coin} dist = {curr.dist} posi = {curr.posi}/>
+        <Show coin = {coin} />
     </div>
   )
 }
