@@ -1,6 +1,7 @@
 import React, {useRef} from 'react'
 import Header  from './header'; 
 import Show from './Show'
+import Bottom  from './Bottom';
 import axios from 'axios';
 
 const url = "https://iidq4k.deta.dev/"
@@ -51,12 +52,15 @@ const headers = {
     <div>
         <Header/>
         <div id = "today_">
-          <p>{curr.index}</p>
-          <p>{curr.ct}</p>
-          <p>{curr.bonus}</p>
-          <p>{curr.t}</p>
+          <p id='show_p'>{curr.index}</p>
+          <p id='show_p' >{curr.dist_}</p>
+          <p id='show_p' >{curr.c100}</p>
+          <p id='show_p' >{curr.ct}</p>
+          <p id='show_p' >{curr.bonus}</p>
+          <p id='show_p' >{curr.t}</p>
         </div>
         <Show coin = {coin} />
+        <Bottom coin = {coin} dist = {curr.dist} posi = {curr.posi}/>
     </div>
   )
 }
