@@ -59,8 +59,8 @@ const headers = {
           <p id='show_p' >{curr.bonus}</p>
           <p id='show_p' >{curr.t}</p>
         </div>
-        <Bottom coin = {coin} dist = {curr.dist} posi = {curr.posi}/>
         <Show coin = {coin} />
+        <Bottom coin = {coin} dist = {curr.dist} posi = {curr.posi}/>
     </div>
   )
 }
