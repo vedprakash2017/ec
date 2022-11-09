@@ -138,6 +138,7 @@ body{
   display:inline-flex;
 }
 #main-bottom{
-  height: 35em;
+  height: 30em;
   overflow: auto;
+  margin: 2.5em 0 0 0;
 }
