@@ -19,19 +19,6 @@ const Show = (props) => {
 
   return (
     <div>
-
-    <div id = "button_css">
-    <div id = "button_ button1">
-    <button onClick={scrollToLeft} >Left</button>
-    </div>
-    <div id = "button_">
-    </div>
-    <div id = "button_">
-    </div>
-    <div id = "button_ button2">
-    <button onClick={scrollToRight}>Right</button>
-    </div>
-    </div>
     <div className='outer'>
 
     <span ref={coinleft}></span>
@@ -49,6 +36,18 @@ const Show = (props) => {
         }
     })}
     <span ref={coinright}></span>
+    </div>
+    <div id = "button_css">
+    <div id = "button_ button1">
+    <button onClick={scrollToLeft} >Left</button>
+    </div>
+    <div id = "button_">
+    </div>
+    <div id = "button_">
+    </div>
+    <div id = "button_ button2">
+    <button onClick={scrollToRight}>Right</button>
+    </div>
     </div>
     </div>
   )
