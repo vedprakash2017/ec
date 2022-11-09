@@ -6,14 +6,18 @@ import bonus from './static/coin-bonus.webp'
 
 const Bottom = (props) => {
   return (
-    <div>
+    <div id='main-bottom'>
         <div id="bottom-out">
             <div id='bottom-coin' >
                 {props.coin.map(function(object, i){
-                    if (object == 1){
-                        let len = props.coin.length
-                        let l = (i-10)<0?0:i-10
-                        let r = (i+5) >= len ? len-1: i+5
+
+                    let len = props.coin.length
+                    let ind = len-i-1
+                    if (props.coin[ind] == 1){
+
+                        let l = (ind-10)<0?0:ind-10
+                        let r = (ind+5) >= len ? len-1: ind+5
+                        
                         let coins = props.coin.slice(l,r+1)
                         
                         let el =  coins.map(function(obj , j){

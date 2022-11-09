@@ -84,6 +84,7 @@ body{
       -ms-flex:4;
           flex:4;
   overflow: auto;
+  padding: 0 2em 0 0;
 }
 
 #bottom-in{
@@ -135,4 +136,8 @@ body{
   display:-webkit-inline-box;
   display:-ms-inline-flexbox;
   display:inline-flex;
+}
+#main-bottom{
+  height: 35em;
+  overflow: auto;
 }
