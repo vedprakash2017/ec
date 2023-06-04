@@ -4,7 +4,7 @@ import Show from './Show'
 import Bottom  from './Bottom';
 import axios from 'axios';
 
-const url = "https://iidq4k.deta.dev/"
+const url = "https://trigger-1-h4763065.deta.app/"
 const headers = {
  'Content-Type': 'application/json; charset=utf-8',
  'Access-Control-Allow-Origin':'*',
