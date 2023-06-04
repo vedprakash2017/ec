@@ -7,8 +7,7 @@ const url = "https://trigger-1-h4763065.deta.app/"
 const headers = {
  'Content-Type': 'application/json; charset=utf-8',
  'Access-Control-Allow-Origin':'*',
- 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS',
- ''
+ 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS'
  }
 
  const Main = () => {
